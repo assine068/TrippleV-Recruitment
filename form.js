@@ -1,5 +1,6 @@
 document.getElementById("Tripple-V-Recruitment").addEventListener("submit", function(event) {
   event.preventDefault();
+  document.getElementById("message").style.display = "block";
 
   // Collect the form data
   const fullName = document.getElementById("full-name").value;
