@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="D:\my way\tripple v\form\form.css">
+  <link rel="icon" type="img/png" href="logo.png">
+  <title>Tripple V Recruitment Form</title>
+</head>
+
+
+
+<body>
+  <!--the img with the title-->
+  <div class="header">
+    <img src="C:\Users\user\Downloads\logo1-removebg-preview.png" alt="Tripple V Logo" class="logo">
+    <h1 class="title">- Tripple V Recruitment Form -</h1>
+  </div>
+  
+  <form id="Tripple-V-Recruitment">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="full-name">Full Name *</label><br>
+      <input type="text" name="full-name" id="full-name" class="text" required>
+      
+      <br>
+      <label for="age">Age *</label><br>
+      <input type="number" name="age" id="age" min="13" class="text" required><br>
+
+
+      <label for="phone">Phone Number *</label><br>
+      <input type="tel" name="phone" id="phone" class="text" required><br>
+
+      <label for="email">Email Address *</label><br>
+      <input type="email" name="email" id="email" class="text" required><br>
+
+      <label for="city">City *</label><br>
+      <input type="text" name="city" id="city" class="text" required><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>About You</legend>
+
+      <label for="WhyUjoin">Why do you want to join Tripple V? *</label><br>
+      <textarea name="WhyUjoin" id="whyUjoin" rows="3" required placeholder="What excites you about the club?"></textarea><br><br>
+
+
+      <label for="skills">What skills or talents can you bring to the team? *</label><br>
+      <textarea name="skills" id="skills" rows="3" required placeholder="Design, photography, logistics, social media..."></textarea><br><br>
+
+
+      <label for="attended">Have you attended a Tripple V event before? *</label><br><br>
+      <div class="radio-group-attend">
+        <label><input type="radio" name="attended" value="Yes" required> Yes</label><br>
+        <label><input type="radio" name="attended" value="No"> No</label><br>
+        <label><input type="radio" name="attended" value="Planning"> Not yet, but I plan to</label>
+      </div>
+      <br>
+      <label for="post">Which post interests you most? *</label><br><br>
+      <div class="post-group">
+        <label><input type="checkbox" name="post" value="Event Operations"> Event Operations</label><br>
+        <label><input type="checkbox" name="post" value="Media & Communications"> Media & Communications (marketing, social media, content)</label><br>
+        <label><input type="checkbox" name="post" value="Finance & Accounting"> Finance & Accounting (budgeting, payments, tracking)</label>
+      </div><br>
+
+      <label for="unique">Tell us something unique about you *</label><br>
+      <textarea name="unique" id="unique" rows="3" required placeholder="What makes you stand out?"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Availability</legend>
+      <label for="week-time">How much time can you dedicate weekly?</label><br>
+      <input type="text" name="week-time" id="week-time" class="text" placeholder="e.g. 5 hours/week, weekends only, flexible"><br><br>
+
+
+      <label for="availability">Are you available for physical events?</label><br><br>
+      <div class="available">
+        <label><input type="radio" name="availability" value="Yes" required> Yes</label><br>
+        <label><input type="radio" name="availability" value="No"> No</label><br>
+        <label><input type="radio" name="availability" value="Depends"> Depends on the location</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Optional</legend>
+      <label for="profile">Link Your Profile</label><br>
+      <input type="url" name="profile" id="profile" placeholder="Instagram, LinkedIn, etc." class="text"><br><br>
+
+      <label for="extra">Any questions or anything else you'd like us to know?</label><br>
+      <textarea name="extra" id="extra" rows="3"></textarea>
+    </fieldset>
+
+    <br>
+    <button type="submit">Submit Application</button>
+    <button type="reset">Reset</button>
+
+    <p id="message" style="display: none; color: var(--accent-color); margin-top: 10px;">
+      ✅ Thank you! Your form has been submitted.
+    </p>
+  </form>
+
+  <script src="D:\my way\tripple v\form\form.js"></script>
+</body>
+</html>
