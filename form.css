@@ -81,12 +81,6 @@ box-shadow: 0 0 1px;
   width: 100%;
 }
 
-#message {
-  display: none;
-  margin-top: 10px;
-  font-size: 14px;
-  color: var(--accent-color);
-}
 
 
 
