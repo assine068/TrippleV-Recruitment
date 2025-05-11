@@ -1,9 +1,10 @@
 document.getElementById("Tripple-V-Recruitment").addEventListener("submit", function(event) {
   event.preventDefault();
-  document.getElementById("message").style.display = "block";
-  setTimeout(() => {
-    messageEl.style.display = "none";
-  }, 5000);
+ const messageEl = document.getElementById("message");
+messageEl.style.display = "block";
+setTimeout(() => {
+  messageEl.style.display = "none";
+}, 5000);
 
   // Collect the form data
   const fullName = document.getElementById("full-name").value;
